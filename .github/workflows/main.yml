@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: 🛎️ Checkout
-      - uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.3.4
         with:
           persist-credentials: false
       
@@ -21,7 +21,7 @@ jobs:
           npm run build
       
       - name: 🚀 Deploy to GitHub Pages
-      - uses: JamesIves/github-pages-deploy-action@4.1.5
+        uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           branch: gh-pages
           folder: dist
