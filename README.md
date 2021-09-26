@@ -1,4 +1,4 @@
-# personal-page
+# github-page
 
 ## Project setup
 ```
