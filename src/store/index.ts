@@ -1,12 +1,8 @@
-import { createStore } from 'vuex'
+import { createPinia } from "pinia"
+import PiniaHookPlugin from "./plugins/hooks"
 
-export default createStore({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
-})
+const pinia = createPinia()
+pinia.use(PiniaHookPlugin)
+
+export default pinia
+export const piniaStore = pinia
