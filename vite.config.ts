@@ -5,7 +5,6 @@ import AutoImportPlugin from 'unplugin-auto-import/vite'
 import ComponentsPlugin from 'unplugin-vue-components/vite'
 import OptimizationPlugin from 'vite-plugin-optimize-persist'
 import PackageConfigPlugin from 'vite-plugin-package-config'
-import CdnImportPlugin from 'vite-plugin-cdn-import'
 import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
 
 // https://vitejs.dev/config/
@@ -43,12 +42,6 @@ export default defineConfig(() => {
           AntDesignVueResolver({importStyle: 'less'})
         ]
       }),
-      CdnImportPlugin({
-        modules: [
-          {name:'vue',var:'vue',path:'https://cdn.jsdelivr.net/npm/vue@3.2.25/dist/vue.global.prod.js'},
-          {name:'vue-router',var:'vue-router',path:'https://cdn.jsdelivr.net/npm/vue-router@4.0.12/dist/vue-router.global.prod.js'}
-        ]
-      })
     ],
   }
 })
