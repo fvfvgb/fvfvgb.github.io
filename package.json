@@ -2,9 +2,9 @@
   "name": "github-page",
   "version": "0.1.1",
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "serve": "vitepress serve docs"
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
     "vitepress": "^1.0.0-alpha.4"
